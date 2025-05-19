@@ -2,12 +2,15 @@ import { useLocation } from "react-router-dom";
 import { InfoBox } from "../InfoBox";
 import { InfoHeading } from "../InfoHeading";
 import { SmallImage } from "../SmallImage";
+import { Header } from "../Header";
 
 export function InfoPage() {
     const location = useLocation();
     const country = location.state?.country;
     
     return (
+        <div className="info-page">
+            <Header pageName="Information"/>
         <div className="container">
             <div className="top-row">
                 <SmallImage
@@ -53,6 +56,7 @@ export function InfoPage() {
                     ]}
                 />
             </div>
+        </div>
         </div>
     );
 }
