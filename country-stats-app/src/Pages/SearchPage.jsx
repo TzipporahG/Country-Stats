@@ -2,6 +2,7 @@ import './SearchPage.css'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { SearchBox } from '../SearchBox';
+import { Header } from '../Header';
 
 export function SearchPage() {
     const [countryStats, setCountryStats] = useState(null);
@@ -17,6 +18,7 @@ export function SearchPage() {
 
     return (
         <>
+            <Header pageName="Search Page" />
             <SearchBox onDataFetched={handleDataChange} />
 
             {countryStats ? 
