@@ -25,7 +25,7 @@ export function SearchPage() {
                 (countryStats.length > 0 ?  
                     (<ul>
                         {countryStats.map((country, index) => (
-                            <li key={country.name.common}>
+                            <li className="country-button" key={country.name.common}>
                                 <button onClick={() => handleCountryClick(index)}>
                                     {country.name.common}
                                 </button>

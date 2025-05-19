@@ -2,13 +2,14 @@ ul {
     list-style-type: none;
 }
 
-li {
+.country-button {
     display: inline;
 }
 
 li button {
     background-color: #b3b6ff;
     margin: 3px;
+    display: inline;
 }
 
 input {

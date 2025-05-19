@@ -1,3 +1,4 @@
+import "./InfoPage.css";
 import { useLocation } from "react-router-dom";
 import { InfoBox } from "../InfoBox";
 import { InfoHeading } from "../InfoHeading";
