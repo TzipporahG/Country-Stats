@@ -1,5 +1,5 @@
-export function ListItem({ item }) {
+export function ListItem({ category, item }) {
     return (
-        <li>{item}</li>
+        <li>{category}: {item}</li>
     )
 }
