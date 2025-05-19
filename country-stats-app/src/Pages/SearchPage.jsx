@@ -1,3 +1,4 @@
+import './SearchPage.css'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { SearchBox } from '../SearchBox';
@@ -29,9 +30,8 @@ export function SearchPage() {
                             </li>
                         ))}
                     </ul>) 
-                : (<p>No country data available</p>))
-            : (<p>No data yet</p>) }
-
+                : (<p>No countries found</p>))
+            : <></> }
         </>
     );
 }

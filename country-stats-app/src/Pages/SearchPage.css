@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+li button {
+    background-color: #b3b6ff;
+    margin: 3px;
+}
+
+input {
+    margin: 1em;
+    padding: 10px;
+}
+.search-button {
+    background-color: #000000;
+    color:#b3b6ff
+}
