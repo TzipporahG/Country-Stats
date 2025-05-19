@@ -1,10 +1,8 @@
-import { ListItem } from './ListItem.jsx';
-
-export function BulletList({ items }) {
+export function BulletList({ categories = [], items = [] }) {
     return (
-        <ul>
-            {items.map((item, index) => (
-                <ListItem key={index} item={item} />
+        <ul className="bullet-list">
+            {categories.map((category, index) => (
+                <li key={index}>{category}: {items[index]}</li>
             ))}
         </ul>
     );
