@@ -1,9 +1,12 @@
 import { InfoBox } from "../InfoBox";
 import { InfoHeading } from "../InfoHeading";
 import { SmallImage } from "../SmallImage";
+import { Header } from "../Header";
 
 export function InfoPage() {
     return (
+        <div className="info-page">
+        <Header pageName = "Information"/>
         <div className="container">
             <div className="top-row">
                 <SmallImage
@@ -11,11 +14,11 @@ export function InfoPage() {
                     alt="This is just here for examples sake right now"
                 />
                 <InfoHeading
-                    country="United States"
+                    country={"United States"}
                     countryCode={"USA"}
                     categories={["Capital City", "Language", "Continent"]}
                     items={[
-                        "Washington, D.C.", "English", "North America"
+                         "Washington, D.C.", "English", "North America"
                     ]}
                 />
                 <SmallImage
@@ -40,5 +43,6 @@ export function InfoPage() {
                 />
             </div>
         </div>
+    </div>
     );
 }

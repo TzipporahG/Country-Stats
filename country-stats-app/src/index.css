@@ -107,3 +107,38 @@ h1 {
   padding: 0.5em;
   list-style: none;
 }
+
+/* header styling */
+header {
+  background-color: #0b353d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  flex: 1;
+  text-align: left;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin: 10px;
+}
