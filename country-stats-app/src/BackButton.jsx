@@ -4,6 +4,6 @@ export function BackButton() {
     const navigate = useNavigate();
 
     return (
-        <button onClick={() => navigate(-1)}>Back</button>
+        <button className="back" onClick={() => navigate(-1)}>Back</button>
     );
 }
