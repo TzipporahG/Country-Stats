@@ -3,11 +3,10 @@ import { InfoBox } from "../InfoBox";
 export function InfoPage() {
     return (
         <InfoBox
-            header="Info Page"
+            header="Stats"
+            categories={["Area", "Borders", "Currencies", "Demonym", "Native Name"]}
             items={[
-                "This is an info page.",
-                "It contains information about the application.",
-                "You can find various details here."
+                "area", "borders", "currencies", "demonym", "nativeName"
             ]}
         />  
     )
