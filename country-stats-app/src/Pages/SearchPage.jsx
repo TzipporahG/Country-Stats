@@ -1,4 +1,4 @@
-import './SearchPage.css'
+import './SearchPage.css';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { SearchBox } from '../SearchBox';
@@ -13,7 +13,7 @@ export function SearchPage() {
       };
 
     const handleCountryClick = (index) => {
-        navigate('/info', {state:{country: countryStats[index]}})
+        navigate('info', {state:{country: countryStats[index]}})
     }
 
     return (
