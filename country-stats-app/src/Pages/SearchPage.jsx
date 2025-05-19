@@ -17,19 +17,6 @@ export function SearchPage() {
     return (
         <>
             <SearchBox onDataFetched={handleDataChange} />
-            {/* {countryStats && countryStats.length > 0 ? (
-                <ul>
-                    {countryStats.map((country, index) => (
-                        <li key={country.name.common}>
-                            <button onClick={() => handleCountryClick(index)}>
-                                {country.name.common}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
-            ) : (
-                <p>No data yet.</p>
-            )} */}
 
             {countryStats ? 
                 (countryStats.length > 0 ?  
@@ -44,6 +31,7 @@ export function SearchPage() {
                     </ul>) 
                 : (<p>No country data available</p>))
             : (<p>No data yet</p>) }
+
         </>
     );
 }

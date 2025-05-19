@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { InfoPage } from './Pages/InfoPage'
 import { SearchPage } from './Pages/SearchPage'
 import { AboutUs } from './Pages/AboutUs'
+
 function App() {
   return (
 
