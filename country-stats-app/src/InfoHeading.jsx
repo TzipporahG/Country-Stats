@@ -1,10 +1,12 @@
 import { BulletList } from "./BulletList";
 
-export function InfoHeading({ country, categories, items }) {
+export function InfoHeading({ country, countryCode, categories, items }) {
     return (
         <>
-            <h1>{country}</h1>
-            <BulletList category={categories} items={items} />
+            <h1>{country}({countryCode})</h1>
+            {categories.map((category, index) => (
+                <BulletList key={index} category={category} items={items[index]} />
+            ))}
         </>
     )
 }

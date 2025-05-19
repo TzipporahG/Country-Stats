@@ -1,19 +1,33 @@
 import { InfoBox } from "../InfoBox";
+import { InfoHeading } from "../InfoHeading";
 import { SmallImage } from "../SmallImage";
 
 export function InfoPage() {
     return (
         <>
+
+            <SmallImage
+                link="https://mainfacts.com/media/images/coats_of_arms/us.svg"
+                alt="This is just here for examples sake right now"
+            />
+            <InfoHeading
+                country="United States"
+                countryCode={"USA"}
+                categories={["Capital City", "Language", "Continent"]}
+                items={[
+                    "Washington, D.C.", "English", "North America"
+                ]}
+            />
+            <SmallImage
+                link="https://mainfacts.com/media/images/coats_of_arms/us.svg"
+                alt="This is just here for examples sake right now"
+            />
             <InfoBox
                 header="Stats"
                 categories={["Area", "Borders", "Currencies", "Demonym", "Native Name"]}
                 items={[
                     "area", "borders", "currencies", "demonym", "nativeName"
                 ]}
-            />
-            <SmallImage
-                link="https://mainfacts.com/media/images/coats_of_arms/us.svg"
-                alt="This is just here for examples sake right now"
             />
             <InfoBox
                 header="Fun Facts"
