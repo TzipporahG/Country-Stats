@@ -17,14 +17,20 @@ export function SearchPage() {
     return (
         <>
             <SearchBox onDataFetched={handleDataChange} />
-            {countryStats ? (
-                <>
-                    {countryStats.map((country, index) => (
-                        <button onClick={() => handleCountryClick(index)} key={index}>{country.name.common}</button>
-                    ))}
-                </>
-            ) : (
+            {countryStats === null ? (
                 <p>No data yet.</p>
+            ) : countryStats.length === 0 ? (
+                <p>No countries found.</p>
+            ) : (
+                <ul>
+                    {countryStats.map((country, index) => (
+                        <li key={country.name.common}>
+                            <button onClick={() => handleCountryClick(index)}>
+                                {country.name.common}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
             )}
         </>
     );
