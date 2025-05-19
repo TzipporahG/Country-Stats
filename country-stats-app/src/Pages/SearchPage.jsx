@@ -1,18 +1,31 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { SearchBox } from '../SearchBox';
 
 export function SearchPage() {
     const [countryStats, setCountryStats] = useState(null);
+    const navigate = useNavigate();
+
     const handleDataChange = (newData) => {
         setCountryStats(newData);
       };
 
+    const handleCountryClick = (index) => {
+        navigate('/info', {state:{country: countryStats[index]}})
+    }
+
     return (
         <>
             <SearchBox onDataFetched={handleDataChange} />
-            <Link to="/info">Go to Info Page</Link>
-            <p>{countryStats ? <pre>{JSON.stringify(countryStats, null, 2)}</pre> : 'No data yet.'}</p>
+            {countryStats ? (
+                <>
+                    {countryStats.map((country, index) => (
+                        <button onClick={() => handleCountryClick(index)} key={index}>{country.name.common}</button>
+                    ))}
+                </>
+            ) : (
+                <p>No data yet.</p>
+            )}
         </>
     );
 }
