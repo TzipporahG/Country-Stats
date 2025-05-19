@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: #0b353d;
 }
 
 h1 {
@@ -65,4 +66,79 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.bottom-row {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.top-row {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10PX;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  ;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.info-heading li{
+  margin: 0;
+  padding: 0.5em;
+  list-style: none;
+}
+
+/* header styling */
+header {
+  background-color: #0b353d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  flex: 1;
+  text-align: left;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+  margin: 10px;
 }
