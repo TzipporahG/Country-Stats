@@ -1,5 +1,5 @@
 import { InfoBox } from "../InfoBox";
-import { SmallImage } from "./SmallImage";
+import { SmallImage } from "../SmallImage";
 
 export function InfoPage() {
     return (
