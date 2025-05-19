@@ -22,7 +22,7 @@
     flex-basis: 50%;
     ;
   }
-  
+
   .container {
     display: flex;
     flex-direction: column;
@@ -48,4 +48,11 @@
   li {
     text-decoration: 5px solid #ff0000;
     padding: 0.5em;
+  }
+
+  .back {
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    background-color: #b3b1d8;
   }
